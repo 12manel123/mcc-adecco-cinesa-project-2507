@@ -1,0 +1,18 @@
+.flexible{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 576px) and (max-width:768px){
+    app-card-producto{
+        width: 170px;
+    }
+    
+}
+@media (min-width: 769px) and (max-width:991px){
+    app-card-producto{
+        width: 200px;
+    }
+    
+}

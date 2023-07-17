@@ -14,6 +14,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { ComponenteGeneralComponent } from './componente-general/componente-general.component';
 import { HeaderSecunModule } from './header-secun/header-secun.module';
 import { BodyGridModule } from './body-grid/body-grid.module';
+import { VistasModule } from './vistas/vistas.module';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { BodyGridModule } from './body-grid/body-grid.module';
     MatIconModule,
     MatToolbarModule,
     HeaderSecunModule,
-    BodyGridModule
+    BodyGridModule,
+    VistasModule
     
   ],
   providers: [],

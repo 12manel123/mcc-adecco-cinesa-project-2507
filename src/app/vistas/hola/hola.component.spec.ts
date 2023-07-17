@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PiePaginaComponent } from './pie-pagina.component';
+import { HolaComponent } from './hola.component';
 
-describe('PiePaginaComponent', () => {
-  let component: PiePaginaComponent;
-  let fixture: ComponentFixture<PiePaginaComponent>;
+describe('HolaComponent', () => {
+  let component: HolaComponent;
+  let fixture: ComponentFixture<HolaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PiePaginaComponent ]
+      declarations: [ HolaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PiePaginaComponent);
+    fixture = TestBed.createComponent(HolaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
