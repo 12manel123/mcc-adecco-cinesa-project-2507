@@ -1,0 +1,25 @@
+<div *ngFor="let entrada of entradas">
+    <p>Nombre: {{ entrada.nombre }}</p>
+    <p>Precio: {{ entrada.precio }}$</p>
+  </div>
+  
+
+  <hr>
+  <div *ngFor="let entrada of entradas" [ngSwitch]="entrada.categoria">
+    <ng-container *ngSwitchCase="'Infantil'">
+      <p>Esta es una entrada para niños.</p>
+    </ng-container>
+  
+    <ng-container *ngSwitchCase="'General'">
+      <p>Esta es una entrada para adultos.</p>
+    </ng-container>
+  
+    <ng-container *ngSwitchCase="'VIP'">
+      <p>Esta es una entrada VIP con servicios exclusivos.</p>
+    </ng-container>
+  
+    <ng-container *ngSwitchDefault>
+      <p>Categoría no reconocida.</p>
+    </ng-container>
+  </div>
+  

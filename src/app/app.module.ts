@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import  {MatCardModule}  from   '@angular/material/card'  ; 
 import { HeaderModule } from './header/header.module';
 import { BodyModule } from './body/body.module';
-import { FooterModule } from './footer/footer.module';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -15,12 +14,13 @@ import { ComponenteGeneralComponent } from './componente-general/componente-gene
 import { HeaderSecunModule } from './header-secun/header-secun.module';
 import { BodyGridModule } from './body-grid/body-grid.module';
 import { VistasModule } from './vistas/vistas.module';
-
-
+import { CineComponentComponent } from './cine-component/cine-component.component';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
     ComponenteGeneralComponent,
+    CineComponentComponent,
 
 
   ],
@@ -33,12 +33,12 @@ import { VistasModule } from './vistas/vistas.module';
     MatButtonModule,
     HeaderModule,
     BodyModule,
-    FooterModule,
     MatIconModule,
     MatToolbarModule,
     HeaderSecunModule,
     BodyGridModule,
-    VistasModule
+    VistasModule,
+    CommonModule
     
   ],
   providers: [],
